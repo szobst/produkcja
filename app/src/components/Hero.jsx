@@ -303,7 +303,7 @@ const handleRedirectChange = (event) => {
     if (number_of_shooters_rev.current == 1) {
       //console.log('Wysyłanie wartości: ', bodyPart, technique, actionType, shooterPossition, gameMinute, firstShot);
       // Użyj backticksów zamiast zwykłych cudzysłowów
-      fetch(`http://127.0.0.1:5000/get_model?shooter=${shooter}&goalkeeper=${goalkeeper}&defenders=${defenders}&strickers=${stricers}&bodyPart=${bodyPart}&technique=${technique}&actionType=${actionType}&shooterPossition=${shooterPossition}&gameMinute=${gameMinute}&shot_first_time=${firstShot}&shot_one_on_one=${oneOnOne}&shot_aerial_won=${afterAirDuel}&shot_open_goal=${openGoal}&shot_follows_dribble=${afterDribbling}&shot_redirect=${redirect}`).then(
+      fetch(`https://sg-server-ne4h.onrender.com/get_model?shooter=${shooter}&goalkeeper=${goalkeeper}&defenders=${defenders}&strickers=${stricers}&bodyPart=${bodyPart}&technique=${technique}&actionType=${actionType}&shooterPossition=${shooterPossition}&gameMinute=${gameMinute}&shot_first_time=${firstShot}&shot_one_on_one=${oneOnOne}&shot_aerial_won=${afterAirDuel}&shot_open_goal=${openGoal}&shot_follows_dribble=${afterDribbling}&shot_redirect=${redirect}`).then(
         res => res.json()
       ).then(
         data => {
