@@ -1,7 +1,7 @@
 {
   "name": "react_bs_web",
   "private": true,
-  "proxy": "http://127.0.0.1:5000/",
+  "proxy": "https://sg-server-ne4h.onrender.com/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
